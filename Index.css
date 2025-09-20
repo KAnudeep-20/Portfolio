@@ -1,0 +1,245 @@
+body {
+    background-color: #003049;
+    color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-main {
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 999;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: rgb(173, 147, 147);
+}
+
+.content {
+    text-align: right;
+    padding-top: 200px;
+    padding-left: 2rem;
+    padding-right: 5rem;
+    font-size: 1.6rem;
+}
+
+.content h1 {
+    font-size: 4rem;
+}
+
+.imgport {
+    text-align: left;
+    padding: 2rem;
+    margin-top: -165px;
+}
+
+.imgport img {
+    width: 250px;
+    height: 250px;
+    /* make it square */
+    object-fit: cover;
+    /* crops and centers the image nicely */
+    border-radius: 50%;
+}
+
+
+/* my background */
+
+.section-tittle {
+    text-align: center;
+    font-size: 2.8rem;
+    color: white;
+    font-weight: bold;
+    margin-top: 11rem;
+    margin-bottom: 1rem;
+}
+
+.my-info {
+    background-color: #1d3557;
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.about-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 4rem 2rem;
+    /*To move down the boxes */
+    margin-top: 4rem;
+    font-size: 1.1rem;
+}
+
+
+/* section-2 for skills */
+
+.about-sec2 {
+    border-radius: 2rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 3rem 0;
+    font-size: 2rem;
+}
+
+.button-skill {
+    font-size: 1rem;
+    border-radius: 50px;
+    padding: 2rem 3rem;
+    border: none;
+    background-color: #f1f1f1;
+    color: black;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.about-section2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 4rem 2rem;
+    /*To move down the boxes */
+    margin-top: 4rem;
+    font-size: 1.1rem;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* @media (max-width: 768px) {
+    .about-section {
+        grid-template-columns: 1fr;
+    }
+} */
+
+@media (max-width: 768px) {
+    /* Make both grid sections single column */
+    .about-section,
+    .about-section2 {
+        grid-template-columns: 1fr;
+        padding: 2rem 1rem;
+        margin-top: 2rem;
+    }
+    /* Adjust content spacing for smaller screens */
+    .content {
+        padding-top: 100px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .content h1 {
+        font-size: 2.5rem;
+    }
+    /* Fix profile image layout */
+    .imgport {
+        text-align: center;
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+    .imgport img {
+        width: 150px;
+        height: 150px;
+        margin-top: 1rem;
+    }
+    /* Navbar adjustments (if needed) */
+    .navbar ul {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    .logo {
+        padding-right: 0;
+        text-align: center;
+    }
+}
+
+.skills-header {
+    text-align: center;
+    padding: 3rem 0;
+    font-size: 2rem;
+}
+
+.my-info i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+    text-align: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Status message */
+
+#form-status {
+    margin-top: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+
+/* footer css */
+
+.footer {
+    background-color: #1d3557;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 60px;
+    font-size: 14px;
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.footer-socials {
+    margin-top: 10px;
+}
+
+.footer-socials a {
+    margin: 0 10px;
+    color: #f1f1f1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer-socials a:hover {
+    color: #4CAF50;
+}
